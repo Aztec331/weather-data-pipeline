@@ -1,0 +1,13 @@
+# ========== WEATHER API CONFIG ==========
+API_KEY = "49fedd81feb03704bbddea7459566468"
+CITY = "Pune"
+UNITS = "metric"
+
+# ========== SNOWFLAKE CONFIG ==========
+SNOWFLAKE_USER = "aztec331"
+SNOWFLAKE_PASSWORD = "Thiccthighsarelove94#!"
+SNOWFLAKE_ACCOUNT = "pm38160.ap-south-1.aws"   # e.g. abcd12345.ap-south-1.aws
+SNOWFLAKE_WAREHOUSE = "COMPUTE_WH"
+SNOWFLAKE_DATABASE = "WEATHER_DB"
+SNOWFLAKE_SCHEMA = "PUBLIC"
+SNOWFLAKE_TABLE = "WEATHER_DATA"
