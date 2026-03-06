@@ -1,14 +1,10 @@
-# transform_weather.py
-
 import json
 import pandas as pd
 
 def transform_weather_data():
-    # Load raw JSON
     with open("data/raw_weather.json", "r") as f:
         data = json.load(f)
 
-    # Extract useful structured fields
     weather = {
         "city": data["name"],
         "country": data["sys"]["country"],
@@ -21,10 +17,8 @@ def transform_weather_data():
         "weather": data["weather"][0]["main"]
     }
 
-    # Convert to table
     df = pd.DataFrame([weather])
 
-    # Save clean layer
     df.to_csv("data/clean_weather.csv", index=False)
 
     print("✅ Weather data transformed successfully")
